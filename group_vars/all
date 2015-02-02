@@ -1,4 +1,15 @@
 ---
+host: "sitetoadd.tld"
+
+wp_db_name: dbname
+wp_db_user: dbuser
+wp_db_password: dbpass
+
+wp_admin_user: admin
+wp_admin_password: password
+
+wp_site_name: Mercury WP Site
+
 wp_doc_root: /var/www/html
 
 varnish_version: 3.0

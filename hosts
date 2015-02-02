@@ -1,2 +1,2 @@
 [all]
-yourhostname.com
+hostname   ansible_connection=ssh  ansible_ssh_user=root

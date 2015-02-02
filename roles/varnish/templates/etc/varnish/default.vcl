@@ -40,7 +40,7 @@ sub vcl_recv {
     }
 
     # Don't cache admin
-    if (req.url ~ "((wp-(login|admin|comments-post.php|cron.php))|login|timthumb|wrdp_files)" || req.url ~ "preview=true" || req.url ~ "xmlrpc.php") {
+    if (req.url ~ "((wp-(login|admin|comments-post.php|cron.php))|login|timthumb|wrdp_files|admin|stats)" || req.url ~ "preview=true" || req.url ~ "xmlrpc.php") {
         return (pass);
     } else {
     	if ( !(req.http.cookie ~ "wpoven-no-cache") ) {

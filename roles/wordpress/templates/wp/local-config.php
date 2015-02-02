@@ -1,13 +1,13 @@
 <?php
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define('DB_NAME', '{{ db }}');
+define('DB_NAME', '{{ wp_db_name }}');
 
 /** MySQL database username */
-define('DB_USER', '{{ db_user }}');
+define('DB_USER', '{{ wp_db_user }}');
 
 /** MySQL database password */
-define('DB_PASSWORD', '{{ db_user_password }}');
+define('DB_PASSWORD', '{{ wp_db_password }}');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -26,4 +26,4 @@ $memcached_servers = array(
     )
 );
 
-define('WP_CACHE_KEY_SALT', '{{ db }}_1');
+define('WP_CACHE_KEY_SALT', '{{ wp_db_name }}_1');
